@@ -13,4 +13,4 @@ jobs:
       - name: macOS deploy
         run: |
            cd escape_wild
-           flutter build
+           flutter build macos
