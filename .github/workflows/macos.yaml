@@ -1,0 +1,16 @@
+name: macOS Build
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2 # Only works with v2
+      - uses: subosito/flutter-action@v1
+      - name: macOS deploy
+        run: |
+           cd escape_wild
+           flutter build
