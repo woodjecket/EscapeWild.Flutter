@@ -14,3 +14,8 @@ jobs:
         run: |
            cd escape_wild
            flutter build macos
+      - name: Upload file
+        uses: actions/upload-artifact@v3
+        with:
+          name: macos
+          path: escape_wild/
